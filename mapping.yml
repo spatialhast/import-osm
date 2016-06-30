@@ -1,0 +1,25 @@
+tables:
+  motorway:
+    type: linestring
+    fields:
+    - name: geometry
+      type: geometry
+    mapping:
+      highway:
+      - motorway
+      - motorway_link
+    filters:
+      exclude_tags:
+       - ["tunnel", "yes"]
+  trunk:
+    type: linestring
+    fields:
+    - name: geometry
+      type: geometry
+    mapping:
+      highway:
+      - trunk
+      - trunk_link
+    filters:
+      exclude_tags:
+       - ["tunnel", "yes"]
