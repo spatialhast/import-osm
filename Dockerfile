@@ -28,6 +28,4 @@ ENV IMPORT_DATA_DIR=/data/import \
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
-CMD ["chmod -R 777 ./import-osm.sh"]
-
 CMD ["./import-osm.sh"]
